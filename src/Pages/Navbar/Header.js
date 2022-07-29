@@ -1,15 +1,19 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-// import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Header = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className="fs-6 fw-bolder" bg="light" expand="lg">
       <Container fluid>
+        <img
+          src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/house-icon.png"
+          style={{ height: "30px" }}
+          alt="lhome logo"
+        />
         <Navbar.Brand className="mx-3" href="#">
           Estatery
         </Navbar.Brand>
@@ -20,13 +24,13 @@ const Header = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link className="mx-3" href="#action1">
+            <Nav.Link className="mx-3" href="rent">
               Rent
             </Nav.Link>
-            <Nav.Link className="mx-3" href="#action1">
+            <Nav.Link className="mx-3" href="buy">
               Buy
             </Nav.Link>
-            <Nav.Link className="mx-3" href="#action1">
+            <Nav.Link className="mx-3" href="sell">
               Sell
             </Nav.Link>
             <NavDropdown
